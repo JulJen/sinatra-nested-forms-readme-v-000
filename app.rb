@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
 
   get '/student' do
-    erb :student_schedule
+    erb :student
   end
 
 end
