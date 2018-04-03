@@ -6,7 +6,7 @@ class App < Sinatra::Base
     erb :index
   end
 
-  get '/student' do
+  get '/new' do
     erb :student
   end
 
