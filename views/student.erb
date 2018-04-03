@@ -5,11 +5,20 @@
     <title>Student Course Schedule</title>
   </head>
   <body>
-    <h1>Student Registration</h1>
-    <!-- <form action="/student" method="post">
-      <p>Student Name: <input type="text" name="student[name]"></p>
-      <p>Student Grade: <input type="text" name="student[grade]"></p>
-      <button type="submit" value="submit">Submit</button>> -->
-    </form>
+    <h1>Student</h1>
+
+    <div class="student">
+      <h3>Name: <%= @student.name %></h3><br>
+      <h4>Grade: <%= @student.grade %></h4>
+    </div><br>
+
+    <h1>Courses</h1>
+    <% @courses.each do |course| %>
+      <div class="course">
+        <p>Name: <%= course.name %></p><br>
+        <p>Topic: <%= course.topic %></p><br>
+      </div><br>
+    <% end %>
+    
   </body>
 </html>
