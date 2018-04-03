@@ -6,7 +6,7 @@ class App < Sinatra::Base
     erb :new
   end
 
-  get '/student' do
+  get '/' do
     @student = Student.new(params[:student])
 
     params[:student][:courses].each do |details|
@@ -17,4 +17,4 @@ class App < Sinatra::Base
 
     erb :student
   end
-end 
+end
